@@ -44,7 +44,7 @@ function AppFlow({ theme, setTheme }) {
     }
     try {
       setSaveStatus('saving');
-      await axios.post('http://localhost:5000/api/save', { prompt, response });
+      await axios.post('https://runflow-ai.onrender.com/api/save', { prompt, response });
       setSaveStatus('saved');
     } catch { setSaveStatus('error'); }
     setTimeout(() => setSaveStatus(''), 2200);

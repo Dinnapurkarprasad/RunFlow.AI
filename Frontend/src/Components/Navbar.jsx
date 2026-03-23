@@ -134,12 +134,12 @@ export default function Navbar({
           {isLocked ? <FiLock /> : <FiUnlock />}
         </ToolBtn>
         <div className={`w-px h-[18px] mx-0.5 ${sepColor}`} />
-        <ToolBtn
+        {/* <ToolBtn
           onClick={() => setTheme(isDark ? "light" : "dark")}
           title={isDark ? "Light mode" : "Dark mode"}
         >
           {isDark ? <FiSun /> : <FiMoon />}
-        </ToolBtn>
+        </ToolBtn> */}
       </div>
 
       {/* Status + Save */}
